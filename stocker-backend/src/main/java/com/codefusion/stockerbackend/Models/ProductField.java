@@ -6,14 +6,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document
-public class Product {
+public class ProductField {
 
     @Id
     private String id;
+    private Product product;
     private String name;
-    private Long quantity;
-    private Long cost;
-    private User user;
-
-
+    private String value;
 }
