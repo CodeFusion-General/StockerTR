@@ -4,16 +4,17 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
+
 @Data
 @Document
-public class Product {
+public class Purchase {
 
     @Id
     private String id;
-    private String name;
+    private Product product;
     private Long quantity;
-    private Long cost;
-    private User user;
-
-
+    private Long price;
+    private LocalDateTime entryDateTime;
 }
+
