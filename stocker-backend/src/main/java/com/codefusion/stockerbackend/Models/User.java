@@ -1,6 +1,5 @@
 package com.codefusion.stockerbackend.Models;
 
-import jakarta.persistence.OneToOne;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -17,7 +16,6 @@ public class User {
     private String email;
     private String phone;
 
-    @OneToOne
     private StockerType stockerType;
 
 }
