@@ -6,9 +6,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 @Data
-public class StockerType {
+public class UserAccount {
 
     @Id
     private String id;
-    private String type;
+    private String username;
+    private String password;
+    private User user;
 }
