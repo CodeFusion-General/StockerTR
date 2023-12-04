@@ -1,8 +1,6 @@
 package com.codefusion.stockerbackend.Controllers;
 
-import com.codefusion.stockerbackend.Dto.ProductDto;
 import com.codefusion.stockerbackend.Dto.ProductFieldDto;
-import com.codefusion.stockerbackend.Models.Product;
 import com.codefusion.stockerbackend.Models.ProductField;
 import com.codefusion.stockerbackend.Services.ProductFieldService;
 import lombok.RequiredArgsConstructor;
