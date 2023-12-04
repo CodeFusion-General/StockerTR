@@ -1,8 +1,6 @@
 package com.codefusion.stockerbackend.Controllers;
 
-import com.codefusion.stockerbackend.Dto.ProductDto;
 import com.codefusion.stockerbackend.Dto.PurchaseDto;
-import com.codefusion.stockerbackend.Models.Product;
 import com.codefusion.stockerbackend.Models.Purchase;
 import com.codefusion.stockerbackend.Services.PurchaseService;
 import lombok.RequiredArgsConstructor;
