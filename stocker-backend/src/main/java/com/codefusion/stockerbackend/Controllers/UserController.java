@@ -19,7 +19,6 @@ public class UserController {
     @PostMapping
     public Mono<User> createUser(@RequestBody UserDto userDto) {
         return service.createUser(userDto);
-
     }
 
     @GetMapping
