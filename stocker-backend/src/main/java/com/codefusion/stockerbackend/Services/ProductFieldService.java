@@ -57,7 +57,12 @@ public class ProductFieldService {
                 .switchIfEmpty(Mono.empty());
     }
 
-    public Mono<ProductField> getProductField(ProductFieldDto productFieldDto, String id){
+    public Mono<ProductField> getProductFieldByIdNoDetail(String id) {
+        return productFieldRepo.findById(id)
+                .switchIfEmpty(Mono.empty());
+    }
+
+    public Mono<ProductField> updateProductField(ProductFieldDto productFieldDto, String id){
         return productFieldRepo.findById(id)
                 .flatMap(productField -> {
                     productField.setName(productFieldDto.getName());
